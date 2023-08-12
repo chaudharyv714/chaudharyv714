@@ -1,0 +1,257 @@
+ul {
+    list-style: none;
+}
+
+.resume-body {
+    background-image: url(t.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.resume-container {
+    margin: 0 2rem;
+    background-color: rgba(8, 8, 8, 0.5);
+    padding: 2rem 4rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.resume-experience-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.resume-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.resume-row * {
+    width: 45%
+}
+
+.company-logo {
+    height: 4rem;
+    width: 4rem;
+}
+
+.company-name-location {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.company-name-location span {
+    margin-right: 0.5rem;
+}
+
+.company-title {
+    font-size: 1.2rem;
+    color: rgb(212, 211, 211);
+    font-weight: 300;
+}
+
+.company-period {
+    color: rgb(212, 211, 211);
+}
+
+.company-details {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.edu-ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    align-items: center;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    background-color: rgba(173, 166, 166, 0.6);
+    border-radius: 5px;
+}
+
+.edu-ul span {
+    display: flex;
+    flex-direction: row;
+}
+
+.edu-ul li {
+    margin: auto 0.3rem;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.edu-ul img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.resume-light {
+    background-color: rgba(173, 166, 166, 0.2);
+    border-radius: 20px;
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.self {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100vw-4rem);
+    margin-left: -4rem;
+    margin-right: -4rem;
+    padding: 0 2rem;
+    margin-bottom: -2rem;
+    ;
+}
+
+.self img {
+    height: 4rem;
+    margin: 0.2rem 1rem;
+}
+
+.resume-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: -2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.resume-gotohome {
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 0.2rem 0.8rem;
+    background-color: rgb(14, 66, 209);
+    color: white;
+    border: none;
+    font-weight: 300 !important;
+}
+
+.resume-links * {
+    margin-left: 1rem;
+}
+
+.resume-links a {
+    color: rgb(10, 102, 194);
+}
+
+.resume-links a:first-child {
+    color: rgb(6, 72, 99);
+}
+
+.resume-links a:last-child {
+    color: white;
+}
+
+.resume-time {
+    color: white;
+    font-size: 1rem;
+    padding-right: 2rem;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    background-color: rgba(85, 84, 84, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.project-container img {
+    height: 5rem;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-details {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.project-details ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    margin-top: 0;
+    color: rgb(212, 211, 211);
+}
+
+@media (max-width:576px) {
+    .resume-container {
+        margin: 0 0.5rem;
+        padding: 2rem 0.5rem;
+        padding-top: 0;
+
+    }
+
+    .resume-row {
+        flex-direction: column;
+    }
+
+    .resume-row * {
+        width: auto
+    }
+
+    .resume-links * {
+        margin-left: 0.5rem;
+    }
+
+    .resume-time {
+        display: none;
+    }
+
+    .edu-ul {
+        flex-direction: column;
+    }
+
+    .edu-ul span {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .edu-ul img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .self {
+        width: calc(100vw-4rem);
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+        padding: 0.5rem 2rem;
+        margin-bottom: -2rem;
+
+    }
+
+    .project-container {
+        flex-direction: column;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 1px solid white;
+    }
+}
