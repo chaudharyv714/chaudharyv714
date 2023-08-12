@@ -1,0 +1,30 @@
+# netlify.yml
+
+# Build settings
+build:
+  command: npm run build # Your build command
+  publish: build         # The directory to publish after building
+  treat_warnings_as_errors: false # Disable treating warnings as errors
+
+# Environment variables
+# Add any environment variables needed for your project
+# environment:
+#   VARIABLE_NAME: variable_value
+
+# Redirects and rewrites configuration
+# See Netlify documentation for more advanced routing configurations
+# https://docs.netlify.com/routing/overview/
+# redirects:
+#   - from: /old-url
+#     to: /new-url
+# rewrites:
+#   - from: /api/* # Example API endpoint
+#     to: /api/:splat
+
+# Plugins and additional configurations
+# See Netlify documentation for more customization options
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+# plugins:
+#   - package: netlify-plugin-example
+#     inputs:
+#       key: value
